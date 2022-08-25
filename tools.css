@@ -1,0 +1,127 @@
+/* index */
+/* 01.Root css */
+/* 02. general css */
+/* 03. heading section css */
+
+
+/* 01.root css start*/
+:root{
+  --yellow: #bdf300;
+  --white: #fff;
+  --blk: #262626;
+  --bgcolor: linear-gradient(
+    to right,
+    #48bdef,
+        #3fabde,
+        #2cb3f7,
+        #0aa8fb,
+        #019cfd
+        );
+      }
+      /* 01.root css end */
+
+/* 02.general css start */
+body {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* 02.general css end */
+
+
+/* 03. heading section css start */
+#heading {
+  background-image: var(--bgcolor);
+}
+#content_part {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+
+}
+#heading_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+#head {
+  font-size: 3rem;
+  width: 500px;
+  height: 96px;
+  font-weight: 400;
+  color: var(--white);
+  margin: 0;
+}
+#heading_description {
+  width: 500px;
+  height: 108px;
+  color: var(--white);
+  font-size: 22px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-top: 50px;
+  text-align: justify;
+}
+#btn_link{
+    margin-top: 100px;
+}
+#start_free {
+  
+  background-color: var(--yellow);
+  color: var(--blk);
+  font-weight: 700;
+  text-decoration: none;
+  padding: .75rem 1.25rem;
+  border-radius: 50px;
+
+}
+#start_free:hover{
+    opacity: 0.75;
+}
+#tools_main_image{
+    display: block;
+    width: 100%;
+}
+#link_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: auto;
+    border-top: 1px solid var(--white);
+    background-image: var(--bgcolor);
+}
+.tools_links{
+    width: 197px;
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tools_links a{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    line-height: 3.5;
+    transition: all 0.5s;
+}
+.tools_links a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /* 03. heding section css end */
