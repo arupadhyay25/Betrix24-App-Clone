@@ -1,0 +1,44 @@
+#topbar{
+    background-color: deepskyblue;
+    font-size: 38px;
+    color: white;
+    font-weight: 400;
+    line-height: 48px;
+    font-family: montserrat;
+    padding: 40px;
+    padding-left: 100px ;
+            }
+            #one{
+                display: flex;
+            }
+            #one>div>img{
+               height: 600px;
+              margin: 30px;
+            }
+            #one>div+div{
+            padding-top: 150px;
+            padding-left: 50px;
+            width: 400px;
+            }
+            #one>div+div>h2{
+                font-weight: lighter;
+                font-size: 35px;
+            }
+            #one>div+div>p{
+                font-weight: 400;
+                font-size: 18px;
+                 font-style: normal;
+                color: rgb(38, 38, 38);
+                line-height: 32.4px;
+                font-family: Montserrat;
+    }
+    button{
+        background-color: deepskyblue;
+        color:white ;
+        height: 50px;
+        width: 150px;
+        border-radius:25px;
+        border: 0;
+        font-size: 14px;
+        margin-top: 10px;
+    }
