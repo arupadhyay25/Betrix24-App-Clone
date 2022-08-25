@@ -15,17 +15,60 @@ li{
 .box{
     display: flex;
     gap: 20px;
-    
     height: 100px;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 .container2{
-    height: 600px;
-    width: 80%;
+    height: 1400px;
+    width: 90%;
     margin: auto;
     border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(5,260px);
+    grid-template-rows: repeat(1,1200px);
+    gap: 3px;
+    justify-content: space-around;
+   
+}
+.container2 > div{
+    border: 2px solid black;
+    border-radius: 10px;
+  
+}
+.card1{
+    height: 100px;
+text-align: center;
+border-radius: 9px;
+
+}
+.card2{
+    text-align: center;
+}
+.pricing{
+    height: 50px;
+    width: 90%;
+    margin: auto;
+  display: flex;
+  gap: 43%;
+  margin-bottom: 2%;
+}
+.pricing>div:nth-child(1){
+    display: flex;
+    gap: 9px;
+}
+.pricing>div:nth-child(2){
+    display: flex;
+    gap: 9px;
+}
+#select{
+    margin-top: 4%;
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid #3BC8F5;
+    background-color: white;
 }
 .container3{
     height: 300px;
