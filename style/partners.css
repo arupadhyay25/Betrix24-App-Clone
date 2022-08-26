@@ -1,0 +1,327 @@
+/* index */
+/* 01. root css  */
+/* 02. general css */
+/* 03. partners heading section css */
+/* 04. partner sticky navbar css */
+/* 05. partner help section css */
+/* 06. partners specialsationsection css */
+/* 07. partners data section css */
+
+/* 01. root css start */
+:root {
+  --primary: #1ac3f3;
+  --secondary : #68DDFF;
+  --white: #fff;
+  --blk: #000;
+  --bgcolor: linear-gradient(
+    to right,
+    #48bdef,
+    #3fabde,
+    #2cb3f7,
+    #0aa8fb,
+    #019cfd
+  );
+}
+/* 01. root css end */
+
+/* 02. general css start */
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+/* 02. general css end */
+
+/* 03. partners heading section css start */
+#partners_heading {
+  background-image: var(--bgcolor);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 136px;
+}
+#partners_title {
+  width: 90%;
+  margin: auto;
+}
+#partners_title > h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  color: var(--white);
+  margin: 0;
+}
+/* 03. partners heading section css end */
+
+/* 04. partners sticky link bar css start */
+#partners_link_bar {
+  width: 100%;
+  height: 69px;
+  background-image: var(--bgcolor);
+  margin-top: -18px;
+  border-top: 1px solid var(--white);
+}
+#partners_links {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+}
+#partners_links > .part_links {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+#partners_links > .part_links:hover {
+  background-color: rgba(251, 248, 248, 0.35);
+}
+#part_dir {
+  background-color: var(--white);
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+}
+#part_dir > span {
+  color: var(--blk);
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+#partners_links > .part_links > a {
+  display: block;
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* 04. partners sticky link bar css end */
+
+/* 05. partner help section css start */
+#partners_help {
+  width: 100%;
+  margin: 40px 0;
+}
+#help_head {
+  width: 80%;
+  margin: auto;
+}
+#help_head > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+#help_desc {
+  width: 80%;
+  margin: -20px auto;
+}
+#help_desc > p {
+  color: #262626;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#partners_help > a {
+  display: block;
+  width: 398px;
+  height: 45px;
+  margin: 2.5rem auto;
+  text-transform: uppercase;
+  background-color: #00aeef;
+  color: var(--white);
+  text-align: center;
+  line-height: 3.4;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+#partners_help > a:hover {
+  background-color: #0dcaf0;
+  opacity: 0.8;
+}
+/* 05. partner help section css end */
+
+/* 06. partners specialsation section css start */
+#partners_specialisation_section {
+  width: 100%;
+  height: 121px;
+  background-color: #e9ecef;
+}
+#filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+#partners_specialisation > p,
+#partners_region > p,
+#product_versions > p,
+#partners_country > p {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.15rem;
+  color: #6a828c;
+}
+#specialisation,
+#region,
+#version {
+  width: 278px;
+  height: 50px;
+  padding: 5px 5px;
+  font-size: 18px;
+  font-weight: 400;
+  border-color: #6a828c;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.6s;
+}
+#specialisation:hover,
+#region:hover,
+#version:hover,
+#country:hover {
+  border-color: #00aeef;
+  box-shadow: #00aeef 0px 1px 2px 0px, #00aeef 0px 2px 6px 2px;
+}
+#country {
+  width: 278px;
+  height: 50px;
+  border: 1px solid #6a828c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+#country > p {
+  font-size: 18px;
+  font-weight: 400;
+}
+select option {
+  background-color: #e5ecef;
+  border-radius: 5px;
+}
+select option:first-child {
+  background-color: #d6dde0;
+}
+#country > i {
+  background-color: #2fc7f7;
+  color: var(--white);
+  padding: 5px;
+  border-radius: 50%;
+}
+#search_country_section {
+  display: none;
+  padding: 20px;
+  border: 1px solid #d3e2e7;
+  width: 80%;
+  margin: 50px auto;
+}
+#search_country {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+#search_bar {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#search_bar > div {
+  font-size: 32px;
+}
+#search {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  width: 40.33%;
+  font-size: 18px;
+}
+#search::placeholder {
+  font-size: 18px;
+}
+#search_country > div > i {
+  color: #d3e2e7;
+  font-size: 30px;
+}
+#search_bar > button {
+  background-color: #2fc7f7;
+  color: var(--white);
+  font-weight: 700;
+  padding: 11px 24px;
+  font-size: 14px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+#countries {
+  display: flex;
+  justify-content: space-around;
+}
+.country_lists > a {
+  display: block;
+  color: #54d0f8;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+/* 06. partners specialsationsection css end */
+
+/* 07. partners data section css start */
+#partners_data {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.partners_cards {
+  border: 1px solid #000;
+  padding: 10px;
+}
+#first_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#first_div > div > img {
+  height: 40px;
+  width: 40px;
+}
+#second_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+#second_div > div{
+  width: 40%;
+}
+.partners_cards > a {
+  display: block;
+  margin: 10px 0;
+}
+#third_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+/* 07. partners data section css end */
