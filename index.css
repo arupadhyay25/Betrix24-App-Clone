@@ -21,19 +21,20 @@ li{
     align-items: center;
 }
 .container2{
-    height: 1400px;
+    height: 1200px;
     width: 90%;
     margin: auto;
-    border: 2px solid black;
+   
     display: grid;
     grid-template-columns: repeat(5,260px);
     grid-template-rows: repeat(1,1200px);
     gap: 3px;
     justify-content: space-around;
+    font-size: 15px;
    
 }
 .container2 > div{
-    border: 2px solid black;
+   
     border-radius: 10px;
   
 }
@@ -41,11 +42,13 @@ li{
     height: 100px;
 text-align: center;
 border-radius: 9px;
+padding-top: 12px;
 
 }
 .card2{
     text-align: center;
 }
+
 .pricing{
     height: 50px;
     width: 90%;
@@ -72,9 +75,15 @@ border-radius: 9px;
 }
 .container3{
     height: 300px;
-    width: 90%;
+    width: 70%;
     margin: auto;
-    border: 2px solid black;
+   
+    display: flex;
+    gap: 8%;
+    font-size: 18px;
+}
+.container3 > div{
+    width: 65%;
 }
 .headings{
     text-align: center;
@@ -128,5 +137,96 @@ border-radius: 9px;
 .box > img{
     width: 100%;
 }
+.btn1{
+    width: 140px;
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+}
+#member{
+    margin-top: 1%;
+    height: 40px;
+    width: 150px;
+    background-color: #D6FDFB;
+    border: 2px solid gray;
 
+}
+.btn1:hover{
+    cursor: pointer;
+}
+.news{
+    height: 80px;
+    width: 90%;
+    margin:auto;
+    
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    grid-template-rows: repeat(1,80px);
+    gap: 70px;
+    padding: 8%;
+}
+.end_btn{
+    text-align: center;
+    margin-bottom: 5%;
+}
+#form{
+    position:fixed;
+}
+#dis{
+    display: inline-block;
+    margin-left: 2px;
+    padding: 12px 8px;
+    background-color: #ffd717;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0;
+    transform: skewX(-10deg);
+    height: 0px;
+    /* margin-left: -24%; */
+    margin-top: 4.5%;
+}
+#dis1{
+    display:inline-block;
+    margin-left: 2px;
+    padding: 12px 8px;
+    background-color: #ffd717;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0;
+    transform: skewX(-10deg);
+    height: 0px;
+    margin-left: -24%;
+    margin-top: 4.5%; 
+
+}
+.news img:hover{
+    transform: scale(1.2);
+    transition: all 0.1s ease-in-out 0.1s;
+}
+#green h4:hover{
+    background-color:#E3F3A4;
+    padding: 5px;
+    border-radius: 50px;
+    width: 70%;
+ }
+#green p:hover{
+    background-color:#E3F3A4;
+    padding: 5px;
+    border-radius: 50px;
+    width: 70%;
+ }
+#blue h4:hover{
+    background-color:#CAF0FC;
+    padding: 5px;
+    border-radius: 50px;
+    width: 70%;
+ }
+#blue p:hover{
+    background-color:#CAF0FC;
+    padding: 5px;
+    border-radius: 50px;
+    width: 70%;
+ }
 

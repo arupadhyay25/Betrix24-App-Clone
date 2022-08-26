@@ -9,11 +9,12 @@
 
     </style>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
-    <div id="navbar">
-
-    </div>
+  <div id="navbar"></div>
+  <div class="content"></div>
     <div class="upperbody">
     <div class="container1">
     <!-- 1st box -->
@@ -46,17 +47,19 @@
 </h1>
 <div class="pricing">
   <div>
-    <h5>Price per month when paying for </h5>
+    <h5 >Price per month when paying for </h5>
     <select id="select">
-      <option>1year</option>
+      <option>1year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </option>
+   
       <option>1month</option>
       <option>3month</option>
       <option>1year</option>
     </select>
+    <span id="dis1">-30%</span>
   </div>
   <div>
     <h5>Renew plan bought before August1,2022</h5>
-    <button id="select" >Archived plans</button>
+    <button id="select" ><a style="text-decoration:none;color:black;" href="https://www.bitrix24.in/prices/cloud_archive.php">Archived plans</a></button>
   </div>
 </div>
     <div class="container2">
@@ -64,148 +67,148 @@
     <div style="background-color:#F5FDD6;" >
       <div  style="background-color: #E3F3A4;" class="card1">
         <h3>Free</h3>
-        <p>Start working online and sell more with CRM</p>
+        <h5 style="color:#B6C286 ;"  >Start working online and sell more with CRM</h5>
       </div>
       <div class="card2">
         <h3>Unlimited</h3>
         <h4>users</h4>
         <h2>100%free</h2>
         <h5>for all users</h5>
-        <button>REGISTER FREE</button>
+        <button onclick="logbtn()"  style="background-color:#A3CD00 ;color:#FFFFFF;" class="btn1" >REGISTER FREE</button>
         <h3>5GB</h3>
         <hr style="width:80%;">
       </div>
-      <div>
-        <h3>&nbsp;&nbsp;Collaboration</h3>
+      <div id="green">
+        <h4>&nbsp;&nbsp;Collaboration</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HD Videocalls</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calender</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Workspace</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feed</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge base</p>
-        <h3>&nbsp;&nbsp;Tasks & Projects</h3>
-        <h3>&nbsp;&nbsp;CRM</h3>
-        <h3>&nbsp;&nbsp;Drive</h3>
-        <h3>&nbsp;&nbsp;Contract Center</h3>
-        <h3>&nbsp;&nbsp;Website builder</h3>
+        <h4>&nbsp;&nbsp;Tasks & Projects</h4>
+        <h4>&nbsp;&nbsp;CRM</h4>
+        <h4>&nbsp;&nbsp;Drive</h4>
+        <h4>&nbsp;&nbsp;Contract Center</h4>
+        <h4>&nbsp;&nbsp;Website builder</h4>
       </div>
     </div>
     <!-- 2nd  -->
     <div style="background-color: #E7F9FF;">
       <div style="background-color: #CAF0FC;" class="card1">
         <h3>Basic</h3>
-        <p>Start working online and sell more with CRM</p>
+        <h5 style="color:#79ACAC ;">Effective collaboration for small businesses and sales teams</h5>
       </div>
       <div  class="card2">
         <h3>5</h3>
         <h4>users</h4>
-        <h3>Rs.3,052/mo</h3>
+        <h3>Rs.3,052/mo  <span id="dis">-30%</span></h3>
         <h5>for all users</h5>
-        <button>Buy</button>
+        <button onclick="Goto()" style="background-color:#21BDEE ;color:#FFFFFF;"class="btn1">Buy</button>
         
         <h3>24GB</h3>
         <hr style="width:80%;">
       </div>
-      <div>
-        <h3>&nbsp;&nbsp;Collaboration</h3>
+      <div id="blue">
+        <h4>&nbsp;&nbsp;Collaboration</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HD Videocalls</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calender</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Workspace</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feed</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge base</p>
-        <h3>&nbsp;&nbsp;Tasks & Projects</h3>
-        <h3>&nbsp;&nbsp;CRM</h3>
-        <h3>&nbsp;&nbsp;Drive</h3>
-        <h3>&nbsp;&nbsp;Contract Center</h3>
-        <h3>&nbsp;&nbsp;Website builder</h3>
-        <h3>&nbsp;&nbsp;Online Store</h3>
-        <h3>&nbsp;&nbsp;Customer Support</h3>
+        <h4>&nbsp;&nbsp;Tasks & Projects</h4>
+        <h4>&nbsp;&nbsp;CRM</h4>
+        <h4>&nbsp;&nbsp;Drive</h4>
+        <h4>&nbsp;&nbsp;Contract Center</h4>
+        <h4>&nbsp;&nbsp;Website builder</h4>
+        <h4>&nbsp;&nbsp;Online Store</h4>
+        <h4>&nbsp;&nbsp;Customer Support</h4>
       </div>
     </div>
     <!-- 3rd -->
-    <div>
-      <div style="background-color: #E3F3A4;" class="card1">
+    <div style="background-color:#E7F9FF ;">
+      <div style="background-color: #CAF0FC;" class="card1">
         <h3>Standard</h3>
-        <p>Start working online and sell more with CRM</p>
+        <h5  style="color:#79ACAC ;">Advanced collaboration for your entire company and workgroups</h5>
       </div>
       <div class="card2">
         <h3>50</h3>
         <h4>users</h4>
         
-        <h3>Rs.6118/mo</h3>
+        <h3>Rs.6118/mo  <span id="dis">-30%</span></h3>
         <h5>for all users</h5>
-        <button>Buy</button>
+        <button onclick="Goto()" style="background-color:#21BDEE ;color:#FFFFFF;"class="btn1">Buy</button>
         <h3>100GB</h3>
         <hr style="width:80%;">
       </div>
-      <div>
-        <h3>&nbsp;&nbsp;Collaboration</h3>
+      <div id="blue">
+        <h4>&nbsp;&nbsp;Collaboration</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HD Videocalls</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calender</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Workspace</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feed</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge base</p>
-        <h3>&nbsp;&nbsp;Tasks & Projects</h3>
-        <h3>&nbsp;&nbsp;CRM</h3>
-        <h3>&nbsp;&nbsp;Drive</h3>
-        <h3>&nbsp;&nbsp;Contract Center</h3>
-        <h3>&nbsp;&nbsp;Website builder</h3>
-        <h3>&nbsp;&nbsp;Online Store </h3>
-        <h3>&nbsp;&nbsp;Marketing</h3>
-        <h3>&nbsp;&nbsp;Online Documents</h3>
-        <h3>&nbsp;&nbsp;Customer support</h3>
-        <h3>&nbsp;&nbsp;Administration</h3>
+        <h4>&nbsp;&nbsp;Tasks & Projects</h4>
+        <h4>&nbsp;&nbsp;CRM</h4>
+        <h4>&nbsp;&nbsp;Drive</h4>
+        <h4>&nbsp;&nbsp;Contract Center</h4>
+        <h4>&nbsp;&nbsp;Website builder</h4>
+        <h4>&nbsp;&nbsp;Online Store </h4>
+        <h4>&nbsp;&nbsp;Marketing</h4>
+        <h4>&nbsp;&nbsp;Online Documents</h4>
+        <h4>&nbsp;&nbsp;Customer support</h4>
+        <h4>&nbsp;&nbsp;Administration</h4>
       </div>
     </div>
     <!-- 4th -->
-    <div>
-      <div style="background-color: #E3F3A4;" class="card1">
+    <div style="background-color: #E7F9FF;" >
+      <div style="background-color: #CAF0FC;" class="card1">
         <h3>Professional</h3>
-        <p>Start working online and sell more with CRM</p>
+        <h5  style="color:#79ACAC ;" >Maximum sales and business process automation</h5>
       </div>
       <div class="card2">
         <h3>100</h3>
         <h4>users</h4>
-        <h3>Rs.12,243/mo</h3>
+        <h3>Rs.12,243/mo  <span id="dis">-30%</span></h3>
         <h5>for all users</h5>
-        <button>Buy</button>
+        <button onclick="Goto()" style="background-color:#21BDEE ;color:#FFFFFF;"class="btn1">Buy</button>
         <h3>1024GB</h3>
         <hr style="width:80%;">
       </div>
-      <div>
-        <h3>&nbsp;&nbsp;Collaboration</h3>
+      <div id="blue">
+        <h4>&nbsp;&nbsp;Collaboration </h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HD Videocalls</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calender</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Workspace</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feed</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge base</p>
-        <h3>&nbsp;&nbsp;Tasks & Projects</h3>
-        <h3>&nbsp;&nbsp;CRM</h3>
-        <h3>&nbsp;&nbsp;Drive</h3>
-        <h3>&nbsp;&nbsp;Contract Center</h3>
-        <h3>&nbsp;&nbsp;Website builder</h3>
-        <h3>&nbsp;&nbsp;Online store</h3>
-        <h3>&nbsp;&nbsp;Marketing</h3>
-        <h3>&nbsp;&nbsp;Online Documents</h3>
-        <h3>&nbsp;&nbsp;Sales Intelligence</h3>
-        <h3>&nbsp;&nbsp;Automation</h3>
-        <h3>&nbsp;&nbsp;HR</h3>
-        <h3>&nbsp;&nbsp;Customer support</h3>
-        <h3>&nbsp;&nbsp;Administration</h3>
+        <h4>&nbsp;&nbsp;Tasks & Projects</h4>
+        <h4>&nbsp;&nbsp;CRM</h4>
+        <h4>&nbsp;&nbsp;Drive</h4>
+        <h4>&nbsp;&nbsp;Contract Center</h4>
+        <h4>&nbsp;&nbsp;Website builder</h4>
+        <h4>&nbsp;&nbsp;Online store</h4>
+        <h4>&nbsp;&nbsp;Marketing</h4>
+        <h4>&nbsp;&nbsp;Online Documents</h4>
+        <h4>&nbsp;&nbsp;Sales Intelligence</h4>
+        <h4>&nbsp;&nbsp;Automation</h4>
+        <h4>&nbsp;&nbsp;HR</h4>
+        <h4>&nbsp;&nbsp;Customer support</h4>
+        <h4>&nbsp;&nbsp;Administration</h4>
       </div>
     </div>
     <!-- 5th -->
     <div style="background-color: #D6FDFB;" >
       <div style="background-color: #A4F2F2;" class="card1">
         <h3>Enterprise</h3>
-        <p>Start working online and sell more with CRM</p>
+        <h5 style="color:#79ACAC ;" >Digital transformation tools for large businesses and enterprises</h5>
       </div>
       <div class="card2">
-         <select>
-          <option>250 users</option>
+         <select onclick="member()" id="member">
+          <option>250 <span>users</span></option>
           <option>500 users</option>
           <option>1000 users</option>
           <option>2000 users</option>
@@ -219,47 +222,92 @@
           <option>1000 users</option>
          </select>
         <h4>users</h4>
-        <h3>Rs.24,493/mo</h3>
+        <h3 >Rs.<span id="show">24,493</span> /mo <span id="dis">-30%</span></h3>
         <h5>for all users</h5>
-        <button>BUY</button>
+        <button onclick="Goto()" style="background-color:#21BDEE ;color:#FFFFFF;"class="btn1">Buy</button>
         <h3>3TB</h3>
         <hr style="width:80%;">
       </div>
-      <div>
-        <h3>&nbsp;&nbsp;Collaboration</h3>
+      <div id="blue">
+        <h4>&nbsp;&nbsp;Collaboration</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chat</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HD Videocalls</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calender</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Workspace</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feed</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge base</p>
-        <h3>&nbsp;&nbsp;Tasks & Projects</h3>
-        <h3>&nbsp;&nbsp;CRM</h3>
-        <h3>&nbsp;&nbsp;Drive</h3>
-        <h3>&nbsp;&nbsp;Contract Center</h3>
-        <h3>&nbsp;&nbsp;Website builder</h3>
+        <h4>&nbsp;&nbsp;Tasks & Projects</h4>
+        <h4>&nbsp;&nbsp;CRM</h4>
+        <h4>&nbsp;&nbsp;Drive</h4>
+        <h4>&nbsp;&nbsp;Contract Center</h4>
+        <h4>&nbsp;&nbsp;Website builder</h4>
       </div>
     </div>
   </div>
 
     <h1 class="headings" >Bitrix24 in the Press</h1>
 
-  <div class="box">
+  <div class="news">
     <!-- enter box here -->
-        
+    <div>
+      <img src="forbes.png" alt="">
     </div>
+    <div>
+      <img src="pc_magazine.png" alt="">
+    </div>
+    <div>
+      <img style="padding-top:10%;" src="pc_world.png" alt="">
+    </div>
+    <div>
+      <img style="padding-top:15%;" src="techreader.png" alt="">
+    </div>
+    <div>
+      <img src="zd-net.png" alt="">
+    </div>
+     
+    </div>
+    <hr style="color:rgb(184, 181, 181);padding:0.5px">
 
     <div class="container3">
         <!-- 1st box -->
+        <div>
+
+       
+        <h2>Bitrix24 on premise</h2>
+        <p>You can use the self-hosted version of Bitrix24 to run on your server. You get full control over data, source code access, and additional tools, such as helpdesk and e-learning, as well as integration and customization options.</p>
+        <button onclick="more()"; style="width:150px;padding:12px;border-radius: 50px;border:2px solid #21BDEE;background-color: white;color:#21BDEE" >Learn More</button>
+      </div>
+      <img src="clouds.png" alt="">
+        </div>
+        
+        <div id="form">
+          <img src="http://www.allawayacoustics.co.uk/wp-content/uploads/2016/08/louvres-side.png" alt="">
         </div>
         <h1 class="headings">Ready to try?</h1>
-        <button>Register Free</button>
+        <div class="end_btn">
+        <button onclick="logbtn()";  class="freebtn"  >Register Free</button>
+      </div>
 
-        <div id="footer">
-
-        </div>
+        <div id="footer"></div>
 
 </body>
 </html>
 <script src="index.js"></script>
+<script type="module">
+  import navbar from "./component/navbar.js"
+  document.getElementById("navbar").innerHTML=navbar();
+
+  // exporting fotter
+  import footer from "./component/footer.js"
+    document.getElementById("footer").innerHTML=footer();
+
+    // sticky function
+    import stickey from "./component/stickey.js"
+    stickey();
+
+    // for sticky form
+  
+
+
+</script>
 

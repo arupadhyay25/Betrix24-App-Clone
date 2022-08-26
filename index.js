@@ -159,3 +159,33 @@ function appendData(data){
   
 
 }
+
+// button function
+
+function Goto(){
+window.location.href = "https://www.bitrix24.in/prices/buy.php?product=BASIC";
+
+
+}
+let selected = document.getElementById('member').value;
+let show = document.getElementById("show");
+function member(){
+
+
+if(selected = "1000 users"){
+  show.innerText = "55,493";
+}
+else if(selected = "5000 users"){
+  show.innerText = "1,00,493";
+}
+else if(selected = "250 users"){
+  show.innerText = "24,493";
+}
+}
+
+function logbtn(){
+  window.location.href="http://127.0.0.1:5500/evil-jellyfish-2990/Signup.html";
+}
+function more(){
+  window.location.href = "https://www.bitrix24.in/prices/self-hosted.php";
+}
