@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage_blogs.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+</head>
+<body>
+    <div id="navbar"></div>
+<div class="content"></div>
+
+    <div id="blogs-topbar">Blogs</div>
+     <!-- **********************************************************-->
+    
+<div id="blog_one">
+    <div id="blog-searchbar">
+        <input type="text" name="" id="blog-search" placeholder="Search">
+        <button type="submit" id="blog-searchicon"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="div-blog-select">
+<select name="" id="blog-select">
+    <option>All categories</option>
+    <option>Communications</option>
+    <option>Tasks and projects</option>
+    <option>CRM</option>
+    <option>Contact center</option>
+    <option>Websites</option>
+    <option>Applications</option>
+    <option>Webinars</option>
+    <option>Marketing</option>
+    <option>Productivity</option>
+    <option>Human resources</option>
+    <option>Business Devlopment</option>
+    <option>Bitrix24 tips and updates</option>
+</select>
+    </div>
+</div>
+   <!-- **********************************************************-->
+<div id="blog-2"></div>
+
+<!-- **************************************************************** -->
+<div id="blogs-bar2">
+    <h3>Free. Unlimited. Online.</h3>
+    <p>Bitrix24 is a place where everyone can communicate, collaborate on tasks and 
+        <br>
+        projects, manage clients and do much more.</p>
+        <a href="https://www.bitrix24.net/create/?user_lang=en&client_id=site.53889571c99248.40051848&referer=https%3A%2F%2Fwww.bitrix24.com%2Fabout%2Fblogs%2F&ga=GA1.2.584466054.1661242531&_ga=2.38350123.904455400.1661422162-584466054.1661242531&bx_fbp=fb.1.1661242751100.951381445&bx_user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F104.0.0.0+Safari%2F537.36"><button>Register free</button></a>
+        
+</div>
+<!-- ************************************************************************************************ -->
+<div id="blog-3"></div>
+<!-- *********************************************************************************************************** -->
+<!-- extra work -->
+
+
+
+
+
+
+<!-- ************************************************************************************** -->
+<div id="footer"></div>
+
+</body>
+
+<script src="homepage_blogs.js"></script>
+
+
+<script type="module">
+    import navbar from "./component/navbar.js"
+    document.getElementById("navbar").innerHTML=navbar()
+</script>
+
+
+
+<script type="module">
+    import stickey from "./component/stickey.js"
+    stickey()
+</script>
+
+
+<script type="module">
+    import footer from "./component/footer.js"
+    document.getElementById("footer").innerHTML=footer()
+</script>

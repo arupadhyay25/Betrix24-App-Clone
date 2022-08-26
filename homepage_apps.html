@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitrix24 apps</title>
     <link rel="stylesheet" href="homepage_apps.css">
-
+    <link rel="stylesheet" href="./style/navbar.css">
+     <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
+    <div id="navbar"></div>
+<div class="content"></div>
     <div id="topbar">Bitrix24 apps</div>
      <!-- **********************************************************-->
     <div id="one">
@@ -87,8 +90,22 @@
                     <img src="https://www.bitrix24.com/upload/optimizer/converted/images/content_en/apps/api.1366w.jpg.webp?1658491710000" alt="">
                 </div>
             </div>
-       
+            <div id="footer"></div>
     
 </body>
 </html>
 <script src="homepage_apps.js"></script>
+
+
+<script type="module">
+    import navbar from "./component/navbar.js"
+    document.getElementById("navbar").innerHTML=navbar()
+</script>
+<script type="module">
+    import footer from "./component/footer.js"
+    document.getElementById("footer").innerHTML=footer()
+</script>
+<script type="module">
+    import stickey from "./component/stickey.js"
+    stickey()
+</script>
