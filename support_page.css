@@ -1,0 +1,313 @@
+#support-topbar{
+    background-color: deepskyblue;
+    font-size: 48px;
+    color: white;
+    font-weight: 400;
+    line-height: 48px;
+    font-family: montserrat;
+    padding: 50px;
+    padding-left: 150px ;
+    border:0;
+}
+/* ************************************************************************************** */
+#s-one{
+    display: flex;
+    justify-content: space-between;
+    height:230px ;
+    width: 85%;
+    margin: auto;
+}
+
+
+#s-one-1{
+    margin-top: 20px;
+   
+    border: 0px solid red;
+    height: 230px;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+ #s-one-1>img{
+  height: 230px;
+  width:750px;
+  margin-top: 35px;
+}
+/* #s-one-11>img{
+  height: 160px;
+  width:160px;
+  margin-top: 50px;
+ 
+  border-radius: 50%;
+}
+#s-one-12{
+    margin-top: 20px;
+    height: 150px;
+    width: 240px;
+    border: 0px solid blue;
+    background-color: #A3E4D7  ;
+    font-size: 18px ;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: montserrat;
+    padding: 30px 30px;
+    border-radius: 5px;
+} */
+#s-one-2{
+    margin-top: 70px;
+    width: 400px;
+    height:60px;
+    border: 2px solid #CCD1D1 ;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+#s-one-2>#s-search{
+    font-size: 20px ;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: montserrat;
+   margin-top: 2px;
+   margin-left: 5px;
+   border: 0;
+}
+#s-button{
+    height: 40px;
+    width: 100px;
+    background-color: #85C1E9 ;
+    border: 0;
+    font-size: 20px ;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: montserrat;
+    border-radius: 3px;
+    margin: 10px 20px;
+    color: aliceblue;
+    
+}
+/* ************************************************* */
+#s-two{
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid black;
+   width: 85%;
+    margin: auto;
+    margin-top: 100px;
+}
+/* ----------------------------------------------------- */
+#s-two-1{
+     border: 1px solid #BDC3C7;
+    width: 580px; 
+    border-radius: 3px 3px 0px 0px;
+}
+
+/* ----------------------------------------------------- */
+#s-two-1-main{
+    border: 1px solid #BDC3C7;
+    height: 60px ;
+    width: 580px;
+    border-top: 0px solid #BDC3C7;
+    border-radius: 3px 3px 0px 0px;
+    margin-top: -20px;
+}
+#s-two-1-main>p{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 35px ;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: montserrat;
+}
+.s-two-11{
+    border: 1px solid #BDC3C7;
+    height: 45px ;
+    width: 580px;
+    border-top: 0;
+    padding-top: -20px;
+}
+.s-two-11-text{
+margin-left: 10px;
+margin-bottom: 60px;
+font-size: 17px;
+}
+.material-icons{
+    margin-left: 6px;
+    margin-bottom: 10px;
+}
+/* ---------------------------------------------------- */
+#s-two-2{
+    border: 0px solid #BDC3C7;
+    height:230px ;
+    width: 440px;
+    
+}
+#s-two-2-main{
+    border: 1px solid #BDC3C7;
+    height: 50px ;
+    width: 440px;
+    /* border-top: px solid #BDC3C7; */
+    border-radius: 5px ;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#s-two-2-sada{
+    border: 1px solid #BDC3C7;
+    /* height: 400px ; */
+    width: 440px;
+    /* border-top: 0px solid #BDC3C7; */
+    border-radius: 5px ;
+    margin-top: 30px;
+}
+#s-two-2-main{
+    font-size: 18px;
+   
+}
+#s-two-2-main-1{
+    
+   padding-left: 20px;
+   padding-top: 15px;
+}
+#s-two-2-main-2>img{
+   height: 50px;
+   width: 180px;
+   margin-right: 11px;
+  
+}
+#s-two-2-sada>h2{
+    margin-left: 20px;
+   
+}
+#s-li{
+    font-size: 17px;
+    line-height: 20px;
+}
+.s-li{
+    font-size: 17px;
+    line-height: 25px;
+    text-decoration: underline;
+    color: #2E86C1 ;
+}
+/* ********************************************************************** */
+
+#s-3,#s-4,#s-5{
+    
+    width: 1100px;
+    /* height: 300px; */
+    border: 0px solid rgb(182, 203, 211);
+  
+    margin: auto;
+    margin-top: 50px;
+}
+#s-3>h1{
+    font-weight:400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#s-3>p{
+    font-weight: 400;
+    font-size: 22px;
+    color: grey;
+}
+#s-3>img{
+    width:1100px ;
+    margin-top: 50px;
+}
+/* ********************************************************************* */
+
+#s-4>h1{
+    font-weight:400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#s-4>p{
+    font-weight: 400;
+    font-size: 22px;
+    color: grey;
+}
+#s-4>a>button{
+    font-size: 15px;
+    color: #5DADE2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid #5DADE2;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+/* ****************************************** */
+#s-5>h1{
+   
+    font-weight:400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#s-51{
+    display: flex;
+    justify-content: space-between;
+}
+#s-51>a>button{
+    font-size: 15px;
+    color: #5DADE2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid #5DADE2;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#s-52{
+    padding: 10px 60px;
+    width: 900px;
+    height: 140px;
+    margin: auto;
+    border: 1px solid skyblue;
+  background-color: rgb(204, 229, 245);
+    margin: auto;
+    margin-top: 1px; 
+    font-size: 17px;
+    line-height: 25px; 
+    word-spacing: 10px;
+    margin-bottom: 30px;
+}
+/* ************************************** */
+#s-6{
+    display: flex;
+    width: 1100px;
+    /* height: 300px; */
+    border: 0px solid rgb(182, 203, 211);
+  justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+#s-61{
+    width: 530px;
+    height: 300px;
+    border: 0px solid red;
+}
+#s-62{
+    width: 530px;
+    height: 300px;
+    border: 0px solid red;
+}
+#s-61>a>button{
+    font-size: 15px;
+    color: #5DADE2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid #5DADE2;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#s-62>a>button{
+    font-size: 15px;
+    color: #5DADE2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid #5DADE2;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
