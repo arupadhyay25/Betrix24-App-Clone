@@ -1,0 +1,163 @@
+/* index */
+/* 01. root css */
+/* 02. general css */
+/* 03. heading section css */
+/* 04. discount banner section css */
+/* 05. plan selection section css */
+/* 06. plan section html css */
+
+/* 01. root css start */
+:root {
+  --primary: #1ac3f3;
+  --secondary: #68ddff;
+  --white: #fff;
+  --blk: #000;
+  --bgcolor: linear-gradient(
+    to right,
+    #48bdef,
+    #3fabde,
+    #2cb3f7,
+    #0aa8fb,
+    #019cfd
+  );
+}
+/* 01. root css end */
+
+/* 02. general css start */
+body {
+  margin: 0;
+}
+/* 02. general css end */
+
+/* 03. heading section css start */
+#pricing_heading {
+  background-image: var(--bgcolor);
+  width: 100%;
+  height: 136px;
+  display: flex;
+  align-items: center;
+}
+#head_title{
+  width: 85%;
+  margin: auto;
+}
+#head_title > h1{
+  margin: 0;
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 400;
+}
+/* 03. heading section css end */ 
+
+/* 04. discount banner section css start */
+#discount_banner{
+  width: 100%;
+  margin: 30px 0;
+}
+#banner{
+  width: 100%;
+}
+#banner > img{
+  width: 1116px;
+  height: 214px;
+  display: block;
+  margin: auto;
+}
+/* 04. discount banner section css end */
+
+/* 05. discount plan section css start */
+#plan_selection{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 20px auto;
+}
+#plan_section, #archive_plan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#plan_section > div, #archive_plan > div{
+  margin-right: 8px;
+}
+#plan_section > div{
+  font-size: 14px;
+  font-weight: 600;
+  color: #525c69;
+}
+#archive_plan > div{
+  font-size: 14px;
+  font-weight: 600;
+  color: #525c69;
+}
+#duration_plan{
+  width: 156px;
+  height: 32px;
+  border-radius: 25px;
+  border: 2px solid #3BC8F5;
+  padding: 0 10px;
+  font-weight: 700;
+  color: #262626;
+  font-size: 15px;
+}
+#archived{
+  border: 2px solid #3BC8F5;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* 05. discount plan section css end */
+
+/* 06. plan section html css start */
+#plan{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+#free_head{
+  background-color: #E4F4A5;
+  height: 110px;
+  text-align: center;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#free_head > h4{
+  font-size: 18px;
+  font-weight: 600;
+}
+#free_head > span{
+  width: 200px;
+  margin: -20px auto;
+  font-size: 11px;
+  font-weight: 600;
+  color: #9EA976;
+}
+/* 06. plan section html css end */
+
+#plan_info{
+  background-color:#F6FED6;
+  width: 253px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#users_limit{
+  padding-top: 26px;
+  display: flex;
+  align-items: center;
+}
+#users_limit > b{
+  font-size: 16px;
+  margin-left: 5px;
+}
+#users_limit > img{
+    width: 22px;
+    height: 25px;
+}
+
+
+

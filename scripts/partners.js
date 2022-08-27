@@ -6,30 +6,36 @@ var partnerLinkBar = document.getElementById("partners_link_bar");
 var sticky = partnerLinkBar.offsetTop;
 
 function linkBar(){
-    if(window.pageYOffset > sticky){
-        partnerLinkBar.classList.add("sticky");
+    if(window.pageYOffset + "100px" > sticky){
+        partnerLinkBar.classList.add("Sticky");
         partnerLinkBar.style.margin = 0;
         partnerLinkBar.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px";
     }else{
-        partnerLinkBar.classList.remove("sticky");
+        partnerLinkBar.classList.remove("Sticky");
         partnerLinkBar.style.boxShadow = "none";
     }
 }
 
 // showing country list
-let country = document.getElementById("country");
 let show_country = document.getElementById("search_country_section");
+
+let plus = document.getElementById("plus");
+
+let country = document.getElementById("country");
+
 country.addEventListener("click",function(){
-    show_country.style.display="block";
+    show_country.style.display="inherit";
+    plus.style.transform = 'rotate(45deg)';
 });
 
 // hiding country list
 let hide_country = document.getElementById("hide_country");
 hide_country.addEventListener("click",function(){
     show_country.style.display="none";
+    plus.style.transform = 'rotate(90deg)';
 })
 
-
+// partners data 
 partners = [
     {
     "name":"Br24",
@@ -2309,9 +2315,11 @@ partners = [
     "website":"www.intuitivesystems.com.my"
     }
 ]
-    
+ 
+// calling appending data  function
 appendPartnerData(partners);
 
+// appending data function 
 function appendPartnerData(data){
     let container = document.getElementById("partners_data");
     container.innerHTML = null;
@@ -2371,3 +2379,33 @@ function appendPartnerData(data){
         container.append(div);
     })
 }
+
+
+let specialisation = document.getElementById("specialisation");
+specialisation.addEventListener('change',function(){
+    filterData();
+});
+
+let duplicate_data;
+function filterData(){
+    if(specialisation.value == ''){
+        appendPartnerData(partners);
+    }
+
+    else if(specialisation.value == 'GOLD'){
+        // let duplicate_data = [...partners];
+        duplicate_data = partners.filter(function(ele){
+            return ele.type == specialisation.value;
+        });
+        appendPartnerData(duplicate_data);
+    }
+
+    else if(specialisation.value == 'SILVER'){
+        // let duplicate_data = [...partners];
+       duplicate_data =  partners.filter(function(ele){
+        return ele.type == specialisation.value;
+         });
+         appendPartnerData(duplicate_data);
+    }
+}
+
