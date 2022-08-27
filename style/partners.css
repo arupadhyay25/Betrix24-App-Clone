@@ -10,7 +10,7 @@
 /* 01. root css start */
 :root {
   --primary: #1ac3f3;
-  --secondary : #68DDFF;
+  --secondary: #68ddff;
   --white: #fff;
   --blk: #000;
   --bgcolor: linear-gradient(
@@ -98,7 +98,7 @@ a {
   font-size: 1.15rem;
   font-weight: 500;
 }
-.sticky {
+.Sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -291,37 +291,85 @@ select option:first-child {
   gap: 50px;
 }
 .partners_cards {
-  border: 1px solid #000;
-  padding: 10px;
+  border: 1px solid #e5ecef;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
 }
 #first_div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 #first_div > div > img {
   height: 40px;
   width: 40px;
+  margin-right: 5px;
+}
+#first_div > div > a {
+  font-size: 26px;
+  color: var(--blk);
+  border: 1px solid transparent;
+  transition: all 0.6s;
 }
 #second_div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
-#second_div > div{
+#second_div > div:first-child {
+  background-color: #fae063;
+  width: auto;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 8px;
+}
+#second_div > div:last-child {
+  color: #464646;
+  font-size: 12px;
+  text-align: right;
+  font-weight: bold;
+}
+#second_div > div {
   width: 40%;
 }
-.partners_cards > a {
+.partners_cards  a {
   display: block;
   margin: 10px 0;
+  color: #00aeef;
+  border: 1px solid transparent;
+  width: auto;
 }
 #third_div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
+}
+#third_div > a {
+  color: #00aeef;
+  font-size: 17px;
+}
+#third_div > button {
+  background-color: #2fc7f7;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+#third_div > button:hover{
+  background-color: #0dcaf0;
+  opacity: 0.6;
+}
+.partners_cards:hover #first_div > div > a{
+  border-bottom: 1px solid #00aeef;
+  color: #00aeef;
 }
 /* 07. partners data section css end */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <link rel="stylesheet" href="./style/price.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+  </head>
+  <body>
+    <!-- navbar html start -->
+    <div id="navbar"></div>
+    <div class="content"></div>
+    <!-- navbar html end -->
+    <!-- heading section html start -->
+    <div id="pricing_heading">
+      <div id="head_title">
+        <h1>Pricing</h1>
+      </div>
+    </div>
+    <!-- heading section html end -->
+
+    <!-- discount banner section html start -->
+    <div id="discount_banner">
+        <div id="banner">
+            <img src="images/pricing_discount_banner.jpg" alt="Pricing discount banner">
+        </div>
+    </div>
+    <!-- discount banner section html end -->
+
+    <!-- plan duration selection section html start -->
+        <div id="plan_selection">
+            <div id="plan_section">
+                <div>Price per month when paying for</div>
+                <select id="duration_plan">
+                    <option value="1m" class="opt">1 Month</option>
+                    <option value="3m" class="opt">3 Month</option>
+                    <option value="1y" class="opt">1 Year</option>
+                </select>
+            </div>
+
+            <div id="archive_plan">
+                <div>Renew plans bought before August 1, 2022</div>
+                <p id="archived">Archieved plans</p>
+            </div>
+        </div>
+    <!-- plan duration selection section html end -->
+
+    <!-- plan section html start -->
+    <div id="plan">
+        <div id="free_plan">
+            <div id="free_head">
+                <h4>Free</h4>
+                <span>Start working online and sell more with CRM</span>
+            </div>
+            <div id="plan_info">
+                <div id="users_limit">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjI1IDEwLjVDOC4yNSA4LjU3NSA2Ljg1NjY3IDguODc5NSA1LjUgNi4xMjVDMy44OTY1MSA3LjA3MzQzIDIuODcyMTIgOC43MDMxNSAyLjc1IDEwLjVDMi44MzgzIDExLjg1NTggMy41MDAwNCAxMy4xMTkxIDQuNTgzMzMgMTRIMy45MzI1QzEuNjE0NzUgMTMuMTg5MiAwLjA1NDExOCAxMS4xMDU3IDAgOC43NUMwIDQuNzc3NSA0LjExNTgzIDEuMDYxMzggNi40MTY2NyAwQzUuOTc2NjcgMy42NjcxMiAxMSA0LjYyNjEyIDExIDkuNDA2MjVDMTEgMTIuNzk4NiA3LjA2NzUgMTQgNy4wNjc1IDE0SDYuNDE2NjdDNy41Njg1MSAxMy4xNzIgOC4yNDcxMyAxMS44NzY0IDguMjUgMTAuNVoiIGZpbGw9IiNGOTMwMDAiLz4KPC9zdmc+Cg==">
+                    <b>Unlimited</b>
+                </div>
+                <h5 class="user">users</h5>
+                <div class="cost">100% free</div>
+                <div id="free_reg">
+                    <button>Register free</button>
+                </div>
+                <div class="data_lmt">5 GB</div>
+            </div>
+        </div>
+
+        <div id="basic_plan">
+
+        </div>
+        <div id="standard_plan">
+
+        </div>
+        <div id="professional_plan">
+
+        </div>
+        <div id="enterprise_plan">
+
+        </div>
+
+    </div>
+    <!-- plan section html end -->
+
+    <!-- footer html start -->
+    <div id="footer"></div>
+    <!-- footer html end -->
+  </body>
+</html>
+<script type="module">
+  import navbar from "./component/navbar.js";
+  let pricing_Navbar = document.getElementById("navbar");
+  pricing_Navbar.innerHTML = navbar();
+
+  import stickey from "./component/stickey.js";
+  stickey();
+
+  import footer from "./component/footer.js";
+  let pricing_Footer = document.getElementById("footer");
+  pricing_Footer.innerHTML = footer();
+</script>
