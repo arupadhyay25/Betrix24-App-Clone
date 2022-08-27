@@ -1,0 +1,31 @@
+#headings{
+    text-align: center;
+}
+.container1{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20%;
+}
+.box1{
+    width: 35%;
+}
+.box1 video{
+    width: 300%;
+}
+
+
+
+
+.bar1{
+    display: flex;
+    height: 95px;
+    width: 100%;
+    border: 2px solid black;
+    justify-content: center;
+}
+.bar1 img {
+    width: 103%;
+   
+}
