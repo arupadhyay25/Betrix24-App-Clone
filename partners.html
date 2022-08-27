@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bitrix Partner Network</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/partners.css" />
   </head>
   <body>
+    <!-- heading section html start -->
+    <div id="navbar"></div>
+    <div class="content"></div>
+    <!-- navbar html end -->
     <div id="page_wrapper">
-      <!-- heading section html start -->
       <div id="partners_heading">
+        <!-- navbar html start -->
+
         <div id="partners_title">
           <h1>Bitrix Partners</h1>
         </div>
@@ -61,68 +69,17 @@
           <div id="partners_specialisation">
             <p>Partner specifications</p>
             <select id="specialisation">
-              <option value="all">All</option>
-              <option value="authorized training provider">
-                Authorized Training Provider
-              </option>
-              <option value="crm and business automation">
-                CRM and Business Automation
-              </option>
-              <option value="web development">Web Development</option>
-              <option value="Telephony and voip integration">
-                Telephony and VOIP Integration
-              </option>
-              <option value="on-premise version deployment">
-                On-premise version deployment
-              </option>
-              <option value="large enterprise implementation">
-                Large Enterprise implementation
-              </option>
-              <option value="hr and project management">
-                HR and Project management
-              </option>
-              <option value="api integration/app development">
-                API integration / App development
-              </option>
-              <option value="cloud to on-premise migration">
-                Cloud to On-premise migration
-              </option>
-              <option value="on-premise localization(translation)">
-                On-Premise Localization (translation)
-              </option>
-              <option value="social intranet/Enterprise social network">
-                Social Intranet / Enterprise social network
-              </option>
-            </select>
-          </div>
-          <div id="partners_region">
-            <p>Region</p>
-            <select id="region">
-              <option value="all">All</option>
-              <option value="africa and middle_east">
-                Africa and Middleeat
-              </option>
-              <option value="europe">Europe</option>
-              <option value="latam">LATAM</option>
-              <option value="asia&ocenia">Asia & Oceania</option>
-              <option value="dach">D-A-CH</option>
-              <option value="northamerica">North America</option>
+              <option value="">All</option>
+              <option value="GOLD">Gold</option>
+              <option value="SILVER">Silver</option>
             </select>
           </div>
           <div id="partners_country">
             <p>Country</p>
             <div id="country">
               <p>Select country</p>
-              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-plus" id="plus"></i>
             </div>
-          </div>
-          <div id="product_versions">
-            <p>Product version</p>
-            <select id="version">
-              <option value="all">All</option>
-              <option value="cloud">CLOUD</option>
-              <option value="premise">ON-PREMISE</option>
-            </select>
           </div>
         </div>
       </div>
@@ -139,95 +96,110 @@
         </div>
 
         <div id="countries">
-            <div class="country_lists">
-              <a href="#">Andorra (1)</a>
-              <a href="#">Bolivia (2)</a>
-              <a href="#">Cameroon (1)</a>
-              <a href="#">Colombia (10)</a>
-              <a href="#">Dominican Republic (2)</a>
-              <a href="#">France (7)</a>
-              <a href="#">Hondurus (1)</a>
-              <a href="#">Indonesia (2)</a>
-              <a href="#">Jordan (1)</a>
-              <a href="#">Malsiya (4)</a>
-              <a href="#">Morocco (2)</a>
-              <a href="#">Nigeria (1)</a>
-              <a href="#">Paraguay (1)</a>
-              <a href="#">Portugal (3)</a>
-              <a href="#">Singapore (4)</a>
-              <a href="#">Spain (8)</a>
-              <a href="#">Thailand (3)</a>
-              <a href="#">United Kingdom (5)</a>
-            </div>
-            <div class="country_lists">
-              <a href="#">Argentina (7)</a>
-              <a href="#">Bosnia and Herzegovina (1)</a>
-              <a href="#">Canada (6)</a>
-              <a href="#">Costa Rica (3)</a>
-              <a href="#">Ecuador (4)</a>
-              <a href="#">Germany (27)</a>
-              <a href="#">Hong Kong (5)</a>
-              <a href="#">Ireland (1)</a>
-              <a href="#">Kenya (1)</a>
-              <a href="#">Malta (1)</a>
-              <a href="#">Mozambique (1)</a>
-              <a href="#">Oman (1)</a>
-              <a href="#">Peru (3)</a>
-              <a href="#">Romania (4)</a>
-              <a href="#">Slovakia (2)</a>
-              <a href="#">Sri Lanka (1)</a>
-              <a href="#">Tunisia (3)</a>
-              <a href="#">United States of America (31)</a>
-            </div>
-            <div class="country_lists">
-              <a href="#">Australia (7)</a>
-              <a href="#">Brazil (32)</a>
-              <a href="#">Chile (5)</a>
-              <a href="#">Croatia (3)</a>
-              <a href="#">Egypt (6)</a>
-              <a href="#">Greece (1)</a>
-              <a href="#">Hungary (3)</a>
-              <a href="#">Italy (6)</a>
-              <a href="#">Korea, South (1)</a>
-              <a href="#">Mexico (14)</a>
-              <a href="#">Netherlands (1)</a>
-              <a href="#">Pakistan (1)</a>
-              <a href="#">Philippines (3)</a>
-              <a href="#">Saudi Arabia (4)</a>
-              <a href="#">Slovenia (1)</a>
-              <a href="#">Switzerland (4)</a>
-              <a href="#">Turkey (9)</a>
-              <a href="#">Vietnam (17)</a>
-            </div>
-            <div class="country_lists">
-              <a href="#">Austria (5)</a>
-              <a href="#">Bulgaria (2)</a>
-              <a href="#">China (2)</a>
-              <a href="#">Czech Republic (3)</a>
-              <a href="#">El Salvador (2)</a>
-              <a href="#">Guatemala (2)</a>
-              <a href="#">India (14)</a>
-              <a href="#">Japan (1)</a>
-              <a href="#">Kuwait (2)</a>
-              <a href="#">Mongolia (3)</a>
-              <a href="#">New Zealand (4)</a>
-              <a href="#">Panama (1)</a>
-              <a href="#">Poland (20)</a>
-              <a href="#">Serbia (3)</a>
-              <a href="#">South Africa (4)</a>
-              <a href="#">Taiwan (3)</a>
-              <a href="#">United Arab Emirates (10)</a>
-            </div>
+          <div class="country_lists">
+            <a href="#">Andorra (1)</a>
+            <a href="#">Bolivia (2)</a>
+            <a href="#">Cameroon (1)</a>
+            <a href="#">Colombia (10)</a>
+            <a href="#">Dominican Republic (2)</a>
+            <a href="#">France (7)</a>
+            <a href="#">Hondurus (1)</a>
+            <a href="#">Indonesia (2)</a>
+            <a href="#">Jordan (1)</a>
+            <a href="#">Malsiya (4)</a>
+            <a href="#">Morocco (2)</a>
+            <a href="#">Nigeria (1)</a>
+            <a href="#">Paraguay (1)</a>
+            <a href="#">Portugal (3)</a>
+            <a href="#">Singapore (4)</a>
+            <a href="#">Spain (8)</a>
+            <a href="#">Thailand (3)</a>
+            <a href="#">United Kingdom (5)</a>
+          </div>
+          <div class="country_lists">
+            <a href="#">Argentina (7)</a>
+            <a href="#">Bosnia and Herzegovina (1)</a>
+            <a href="#">Canada (6)</a>
+            <a href="#">Costa Rica (3)</a>
+            <a href="#">Ecuador (4)</a>
+            <a href="#">Germany (27)</a>
+            <a href="#">Hong Kong (5)</a>
+            <a href="#">Ireland (1)</a>
+            <a href="#">Kenya (1)</a>
+            <a href="#">Malta (1)</a>
+            <a href="#">Mozambique (1)</a>
+            <a href="#">Oman (1)</a>
+            <a href="#">Peru (3)</a>
+            <a href="#">Romania (4)</a>
+            <a href="#">Slovakia (2)</a>
+            <a href="#">Sri Lanka (1)</a>
+            <a href="#">Tunisia (3)</a>
+            <a href="#">United States of America (31)</a>
+          </div>
+          <div class="country_lists">
+            <a href="#">Australia (7)</a>
+            <a href="#">Brazil (32)</a>
+            <a href="#">Chile (5)</a>
+            <a href="#">Croatia (3)</a>
+            <a href="#">Egypt (6)</a>
+            <a href="#">Greece (1)</a>
+            <a href="#">Hungary (3)</a>
+            <a href="#">Italy (6)</a>
+            <a href="#">Korea, South (1)</a>
+            <a href="#">Mexico (14)</a>
+            <a href="#">Netherlands (1)</a>
+            <a href="#">Pakistan (1)</a>
+            <a href="#">Philippines (3)</a>
+            <a href="#">Saudi Arabia (4)</a>
+            <a href="#">Slovenia (1)</a>
+            <a href="#">Switzerland (4)</a>
+            <a href="#">Turkey (9)</a>
+            <a href="#">Vietnam (17)</a>
+          </div>
+          <div class="country_lists">
+            <a href="#">Austria (5)</a>
+            <a href="#">Bulgaria (2)</a>
+            <a href="#">China (2)</a>
+            <a href="#">Czech Republic (3)</a>
+            <a href="#">El Salvador (2)</a>
+            <a href="#">Guatemala (2)</a>
+            <a href="#">India (14)</a>
+            <a href="#">Japan (1)</a>
+            <a href="#">Kuwait (2)</a>
+            <a href="#">Mongolia (3)</a>
+            <a href="#">New Zealand (4)</a>
+            <a href="#">Panama (1)</a>
+            <a href="#">Poland (20)</a>
+            <a href="#">Serbia (3)</a>
+            <a href="#">South Africa (4)</a>
+            <a href="#">Taiwan (3)</a>
+            <a href="#">United Arab Emirates (10)</a>
+          </div>
         </div>
       </div>
       <!-- partners_specialsation section html end -->
 
       <!-- partners data section html start -->
-      <div id="partners_data">
-        
-      </div>
+      <div id="partners_data"></div>
       <!-- partners data section html end -->
     </div>
+    <!-- footer html start  -->
+    <div id="footer"></div>
+    <!-- footer html end -->
   </body>
 </html>
+
 <script src="./scripts/partners.js"></script>
+
+<script type="module">
+  import navbar from "./component/navbar.js";
+  let partners_Navbar = document.getElementById("navbar");
+  partners_Navbar.innerHTML = navbar();
+
+  import stickey from "./component/stickey.js";
+  stickey();
+
+  import footer from "./component/footer.js";
+  let partners_Footer = document.getElementById("footer");
+  partners_Footer.innerHTML = footer();
+</script>
