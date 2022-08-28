@@ -19,3 +19,7 @@ function nav_tools(){
   function nav_support(){
     window.location.href = "support_page.html";
   }
+
+  function gotohome(){
+    window.location.href="homepage.html"
+  }

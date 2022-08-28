@@ -1,6 +1,8 @@
+
 function navbar(){
+    let name=JSON.parse(localStorage.getItem("name"))
     return `<div id="navbar_1">
-            <img src="./images/bitrex_logo.jpg" alt="">
+            <img onclick="gotohome()" src="./images/bitrex_logo.jpg" alt="">
         </div>
         <div id="navbar_2">
             <div id="left_bar">
@@ -15,7 +17,7 @@ function navbar(){
             <div id="right_bar">
                 <button>START FOR FREE</button>
                 <span class="material-symbols-outlined">person</span>
-                <p>LOG IN</p>
+                <p style="text-align: center;">${name}</p>
                 <span class="material-symbols-outlined">language</span>
                 <p>EN</p>
             </div>

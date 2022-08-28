@@ -14,7 +14,7 @@ function collab(){
 
 
 function crm(){
- let d2 = {t1:'Leads,Deals,Contacts,Companies',
+ let d2 = {t1:'Leads,Deals,Contacts',
    t2:'Quetoes,Invoices',
     t3:'Online-Payment',
    t4:'Sales-automation',
@@ -128,6 +128,7 @@ id = setTimeout(function(){
 
 function appendData(data){
    let items = document.getElementById('items');
+    // items.setAttribute("id","homepage_ul")
    items.innerHTML = "";
    let image =document.getElementById('images'); 
    image.innerHTML = null;

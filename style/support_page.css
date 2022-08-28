@@ -21,8 +21,6 @@
 
 #s-one-1{
     margin-top: 20px;
-   
-    border: 0px solid red;
     height: 230px;
     width: 750px;
     display: flex;
@@ -33,36 +31,13 @@
   width:750px;
   margin-top: 35px;
 }
-/* #s-one-11>img{
-  height: 160px;
-  width:160px;
-  margin-top: 50px;
- 
-  border-radius: 50%;
-}
-#s-one-12{
-    margin-top: 20px;
-    height: 150px;
-    width: 240px;
-    border: 0px solid blue;
-    background-color: #A3E4D7  ;
-    font-size: 18px ;
-    line-height: 21px;
-    font-weight: 400;
-    font-family: montserrat;
-    padding: 30px 30px;
-    border-radius: 5px;
-} */
 #s-one-2{
     margin-top: 70px;
     width: 400px;
     height:60px;
-    border: 2px solid #CCD1D1 ;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
-   
-
 }
 #s-one-2>#s-search{
     font-size: 20px ;
@@ -91,24 +66,20 @@
 #s-two{
     display: flex;
     justify-content: space-between;
-    border: 0px solid black;
-   width: 85%;
+    width: 85%;
     margin: auto;
     margin-top: 100px;
 }
 /* ----------------------------------------------------- */
 #s-two-1{
-     border: 1px solid #BDC3C7;
     width: 580px; 
     border-radius: 3px 3px 0px 0px;
 }
 
 /* ----------------------------------------------------- */
 #s-two-1-main{
-    border: 1px solid #BDC3C7;
     height: 60px ;
     width: 580px;
-    border-top: 0px solid #BDC3C7;
     border-radius: 3px 3px 0px 0px;
     margin-top: -20px;
 }
@@ -121,7 +92,6 @@
     font-family: montserrat;
 }
 .s-two-11{
-    border: 1px solid #BDC3C7;
     height: 45px ;
     width: 580px;
     border-top: 0;
@@ -138,16 +108,13 @@ font-size: 17px;
 }
 /* ---------------------------------------------------- */
 #s-two-2{
-    border: 0px solid #BDC3C7;
     height:230px ;
     width: 440px;
     
 }
 #s-two-2-main{
-    border: 1px solid #BDC3C7;
     height: 50px ;
     width: 440px;
-    /* border-top: px solid #BDC3C7; */
     border-radius: 5px ;
     margin-top: 30px;
     display: flex;
@@ -156,7 +123,6 @@ font-size: 17px;
 }
 #s-two-2-sada{
     border: 1px solid #BDC3C7;
-    /* height: 400px ; */
     width: 440px;
     /* border-top: 0px solid #BDC3C7; */
     border-radius: 5px ;

@@ -5,11 +5,10 @@
   
   
 }
-li{
+#items>li{
     font-size: 21px;
     line-height: 189%;
     text-decoration-color: #3375BB;
-   
 }
 
 .box{

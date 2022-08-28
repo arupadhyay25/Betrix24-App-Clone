@@ -59,7 +59,8 @@ function signup_page(event){
     let password=form.password.value
     let u3 = new User(name)
     u3.signup(name,email,mobile,password)
-    // console.log(name,email,mobile,password)    
+    // console.log(name,email,mobile,password)
+    localStorage.setItem("name",JSON.stringify(name))    
 }
 
 console.log(users);
