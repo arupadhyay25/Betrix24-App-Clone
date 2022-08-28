@@ -21,5 +21,9 @@ function nav_tools(){
   }
 
   function gotohome(){
-    window.location.href="homepage.html"
+    window.location.href="index.html"
+  }
+
+  function gotologin(){
+    window.location.href="signup.html"
   }

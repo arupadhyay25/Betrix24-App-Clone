@@ -30,7 +30,7 @@ class User_signin {
         if(isValidated){
 
             alert("Signin succesfully")
-            window.location.href="homepage.html"
+            window.location.href="index.html"
         }else{
             alert("please enter valid credential")
         }
