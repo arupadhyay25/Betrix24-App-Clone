@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing</title>
-    <link rel="stylesheet" href="./style/price.css">
-    <link rel="stylesheet" href="./style/navbar.css">
-    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/price.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
   </head>
   <body>
     <!-- navbar html start -->
@@ -24,64 +24,605 @@
 
     <!-- discount banner section html start -->
     <div id="discount_banner">
-        <div id="banner">
-            <img src="images/pricing_discount_banner.jpg" alt="Pricing discount banner">
-        </div>
+      <div id="banner">
+        <img
+          src="images/pricing_discount_banner.jpg"
+          alt="Pricing discount banner"
+        />
+      </div>
     </div>
     <!-- discount banner section html end -->
 
     <!-- plan duration selection section html start -->
-        <div id="plan_selection">
-            <div id="plan_section">
-                <div>Price per month when paying for</div>
-                <select id="duration_plan">
-                    <option value="1m" class="opt">1 Month</option>
-                    <option value="3m" class="opt">3 Month</option>
-                    <option value="1y" class="opt">1 Year</option>
-                </select>
-            </div>
+    <div id="plan_selection">
+      <div id="plan_section">
+        <div>Price per month when paying for</div>
+        <select id="duration_plan">
+          <option value="1m">1 Month</option>
+          <option value="3m">3 Month</option>
+          <option value="1y" selected>
+            1 Year <span class="disc">-30%</span>
+          </option>
+        </select>
+      </div>
 
-            <div id="archive_plan">
-                <div>Renew plans bought before August 1, 2022</div>
-                <p id="archived">Archieved plans</p>
-            </div>
-        </div>
+      <div id="archive_plan">
+        <div>Renew plans bought before August 1, 2022</div>
+        <p id="archived">Archieved plans</p>
+      </div>
+    </div>
     <!-- plan duration selection section html end -->
 
     <!-- plan section html start -->
     <div id="plan">
-        <div id="free_plan">
-            <div id="free_head">
-                <h4>Free</h4>
-                <span>Start working online and sell more with CRM</span>
-            </div>
-            <div id="plan_info">
-                <div id="users_limit">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjI1IDEwLjVDOC4yNSA4LjU3NSA2Ljg1NjY3IDguODc5NSA1LjUgNi4xMjVDMy44OTY1MSA3LjA3MzQzIDIuODcyMTIgOC43MDMxNSAyLjc1IDEwLjVDMi44MzgzIDExLjg1NTggMy41MDAwNCAxMy4xMTkxIDQuNTgzMzMgMTRIMy45MzI1QzEuNjE0NzUgMTMuMTg5MiAwLjA1NDExOCAxMS4xMDU3IDAgOC43NUMwIDQuNzc3NSA0LjExNTgzIDEuMDYxMzggNi40MTY2NyAwQzUuOTc2NjcgMy42NjcxMiAxMSA0LjYyNjEyIDExIDkuNDA2MjVDMTEgMTIuNzk4NiA3LjA2NzUgMTQgNy4wNjc1IDE0SDYuNDE2NjdDNy41Njg1MSAxMy4xNzIgOC4yNDcxMyAxMS44NzY0IDguMjUgMTAuNVoiIGZpbGw9IiNGOTMwMDAiLz4KPC9zdmc+Cg==">
-                    <b>Unlimited</b>
-                </div>
-                <h5 class="user">users</h5>
-                <div class="cost">100% free</div>
-                <div id="free_reg">
-                    <button>Register free</button>
-                </div>
-                <div class="data_lmt">5 GB</div>
-            </div>
+      <div id="free_plan">
+        <div id="free_head">
+          <h4>Free</h4>
+          <span>Start working online and sell more with CRM</span>
         </div>
-
-        <div id="basic_plan">
-
+        <div id="plan_info">
+          <div id="users_limit">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjI1IDEwLjVDOC4yNSA4LjU3NSA2Ljg1NjY3IDguODc5NSA1LjUgNi4xMjVDMy44OTY1MSA3LjA3MzQzIDIuODcyMTIgOC43MDMxNSAyLjc1IDEwLjVDMi44MzgzIDExLjg1NTggMy41MDAwNCAxMy4xMTkxIDQuNTgzMzMgMTRIMy45MzI1QzEuNjE0NzUgMTMuMTg5MiAwLjA1NDExOCAxMS4xMDU3IDAgOC43NUMwIDQuNzc3NSA0LjExNTgzIDEuMDYxMzggNi40MTY2NyAwQzUuOTc2NjcgMy42NjcxMiAxMSA0LjYyNjEyIDExIDkuNDA2MjVDMTEgMTIuNzk4NiA3LjA2NzUgMTQgNy4wNjc1IDE0SDYuNDE2NjdDNy41Njg1MSAxMy4xNzIgOC4yNDcxMyAxMS44NzY0IDguMjUgMTAuNVoiIGZpbGw9IiNGOTMwMDAiLz4KPC9zdmc+Cg=="
+            />
+            <b>Unlimited</b>
+          </div>
+          <h5 class="user">users</h5>
+          <div class="cost">100% free</div>
+          <div id="free_reg">
+            <button>Register free</button>
+          </div>
+          <div class="data_lmt">5 GB</div>
         </div>
-        <div id="standard_plan">
+        <ul class="freeplan_services">
+          <li>
+            Collaboration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjY0NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjN0NBOTU5Ii8+PHBhdGggb3BhY2l0eT0iLjkiIGQ9Ik0zIDdhMyAzIDAgMCAxIDMtM2gyLjk0YS4wNi4wNiAwIDAgMSAuMDYuMDZ2NS44OGEuMDYuMDYgMCAwIDEtLjA2LjA2SDZhMyAzIDAgMCAxLTMtM3oiIGZpbGw9IiM1NzlGMUUiIGZpbGwtb3BhY2l0eT0iLjg4MyIvPjwvc3ZnPg=="
+              alt=""
+            />
+            <ul>
+              <li>Chat</li>
+              <li>HD Videocalls</li>
+              <li>Calender</li>
+              <li>Company workspace</li>
+              <li>Feed</li>
+              <li>Knowledge base</li>
+            </ul>
+          </li>
+          <li>
+            Task & projects
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjY0NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjN0NBOTU5Ii8+PHBhdGggb3BhY2l0eT0iLjkiIGQ9Ik0zIDdhMyAzIDAgMCAxIDMtM2gyLjk0YS4wNi4wNiAwIDAgMSAuMDYuMDZ2NS44OGEuMDYuMDYgMCAwIDEtLjA2LjA2SDZhMyAzIDAgMCAxLTMtM3oiIGZpbGw9IiM1NzlGMUUiIGZpbGwtb3BhY2l0eT0iLjg4MyIvPjwvc3ZnPg=="
+              alt=""
+            />
+          </li>
+          <li>
+            CRM
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjY0NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjN0NBOTU5Ii8+PHBhdGggb3BhY2l0eT0iLjkiIGQ9Ik0zIDdhMyAzIDAgMCAxIDMtM2gyLjk0YS4wNi4wNiAwIDAgMSAuMDYuMDZ2NS44OGEuMDYuMDYgMCAwIDEtLjA2LjA2SDZhMyAzIDAgMCAxLTMtM3oiIGZpbGw9IiM1NzlGMUUiIGZpbGwtb3BhY2l0eT0iLjg4MyIvPjwvc3ZnPg=="
+              alt=""
+            />
+          </li>
+          <li>
+            Drive
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjY0NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjN0NBOTU5Ii8+PHBhdGggb3BhY2l0eT0iLjkiIGQ9Ik0zIDdhMyAzIDAgMCAxIDMtM2gyLjk0YS4wNi4wNiAwIDAgMSAuMDYuMDZ2NS44OGEuMDYuMDYgMCAwIDEtLjA2LjA2SDZhMyAzIDAgMCAxLTMtM3oiIGZpbGw9IiM1NzlGMUUiIGZpbGwtb3BhY2l0eT0iLjg4MyIvPjwvc3ZnPg=="
+              alt=""
+            />
+          </li>
+          <li>
+            Contact center
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjY0NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjN0NBOTU5Ii8+PHBhdGggb3BhY2l0eT0iLjkiIGQ9Ik0zIDdhMyAzIDAgMCAxIDMtM2gyLjk0YS4wNi4wNiAwIDAgMSAuMDYuMDZ2NS44OGEuMDYuMDYgMCAwIDEtLjA2LjA2SDZhMyAzIDAgMCAxLTMtM3oiIGZpbGw9IiM1NzlGMUUiIGZpbGwtb3BhY2l0eT0iLjg4MyIvPjwvc3ZnPg=="
+              alt=""
+            />
+          </li>
+          <li>
+            Website bulider
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjY0NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjN0NBOTU5Ii8+PHBhdGggb3BhY2l0eT0iLjkiIGQ9Ik0zIDdhMyAzIDAgMCAxIDMtM2gyLjk0YS4wNi4wNiAwIDAgMSAuMDYuMDZ2NS44OGEuMDYuMDYgMCAwIDEtLjA2LjA2SDZhMyAzIDAgMCAxLTMtM3oiIGZpbGw9IiM1NzlGMUUiIGZpbGwtb3BhY2l0eT0iLjg4MyIvPjwvc3ZnPg=="
+              alt=""
+            />
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
 
+      <div id="basic_plan">
+        <div id="basic_head">
+          <h4>Basic</h4>
+          <span
+            >Effective collaboration for small businesses and sales teams</span
+          >
         </div>
-        <div id="professional_plan">
-
+        <div id="basic_plan_info">
+          <div id="basic_user_limit">
+            <b>5</b>
+          </div>
+          <div class="basic_user">users</div>
+          <div class="basic_cost" id="basic">
+            <p class="nodisc">Rs. 4,360/mo</p>
+            Rs.3,052/mo <span class="disc">-30%</span>
+            <a href="#">For all users</a>
+          </div>
+          <div class="buy_plan"><button>BUY</button></div>
+          <div class="basic_data_limit">24GB</div>
         </div>
-        <div id="enterprise_plan">
-
+        <ul class="basicplan_services">
+          <li>
+            Collaboration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+            <ul>
+              <li>Chat</li>
+              <li>HD Videocalls</li>
+              <li>Calender</li>
+              <li>Company workspace</li>
+              <li>Feed</li>
+              <li>Knowledge base</li>
+            </ul>
+          </li>
+          <li>Task & projects <img src="" alt="" /></li>
+          <li>
+            CRM
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Drive
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Contact center
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Website bulider
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Online store
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>
+            Customer support
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>-</li>
+        </ul>
+      </div>
+      <div id="standard_plan">
+        <div id="standard_head">
+          <h4>Standard</h4>
+          <span
+            >Advanced collaboration for your entire company and workgroups</span
+          >
         </div>
+        <div id="standard_plan_info">
+          <div id="standard_user_limit">
+            <b>50</b>
+          </div>
+          <div class="standard_user">users</div>
+          <div class="standard_cost" id="standard">
+            <p class="nodisc">Rs. 8,740/mo</p>
+            Rs.6,118/mo <span class="disc">-30%</span>
+            <a href="#">For all users</a>
+          </div>
+          <div class="buy_plan"><button>BUY</button></div>
+          <div class="basic_data_limit">100GB</div>
+        </div>
+        <ul class="basicplan_services">
+          <li>
+            Collaboration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+            <ul>
+              <li>Chat</li>
+              <li>HD Videocalls</li>
+              <li>Calender</li>
+              <li>Company workspace</li>
+              <li>Feed</li>
+              <li>Knowledge base</li>
+            </ul>
+          </li>
+          <li>Task & projects <img src="" alt="" /></li>
+          <li>
+            CRM
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Drive
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Contact center
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Website bulider
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Online store
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Marketing
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Online documents
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>
+            Customer support
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Administration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+      <div id="professional_plan">
+        <div id="professional_head">
+          <h4>Professional</h4>
+          <span>Maximum sales and business process automation</span>
+        </div>
+        <div id="professional_plan_info">
+          <div id="professional_user_limit">
+            <b>100</b>
+          </div>
+          <div class="professional_user">users</div>
+          <div class="professional_cost" id="professional">
+            <p  class="nodisc">Rs. 17,490/mo</p>
+            Rs.12,243/mo <span class="disc">-30%</span>
+            <a href="#">For all users</a>
+          </div>
+          <div class="buy_plan"><button>BUY</button></div>
+          <div class="basic_data_limit">1,024GB</div>
+        </div>
+        <ul class="basicplan_services">
+          <li>
+            Collaboration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+            <ul>
+              <li>Chat</li>
+              <li>HD Videocalls</li>
+              <li>Calender</li>
+              <li>Company workspace</li>
+              <li>Feed</li>
+              <li>Knowledge base</li>
+            </ul>
+          </li>
+          <li>
+            Task & projects
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            CRM
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Drive
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Contact center
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Website bulider
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Online store
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Marketing
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Online documents
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Sales Intelligence
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Automation
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            HR
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>
+            Customer Support
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Administration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+      <div id="enterprise_plan">
+        <div id="enterprise_head">
+          <h4>Enterprise</h4>
+          <span
+            >Digital transformation tools for large businesses and
+            enterprises</span
+          >
+        </div>
+        <div id="enterprise_plan_info">
+          <div id="enterprise_user_limit">
+            <b>250</b>
+          </div>
+          <div class="enterprise_user">users</div>
+          <div class="enterprise_cost" id="enterprise">
+            <p class="nodisc">Rs. 34,990/mo</p>
+            Rs.24,493/mo <span class="disc">-30%</span>
 
+            <a href="#">For all users</a>
+          </div>
+          <div class="buy_plan"><button>BUY</button></div>
+          <div class="basic_data_limit">3 TB</div>
+        </div>
+        <ul class="basicplan_services">
+          <li>
+            Collaboration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+            <ul>
+              <li>Chat</li>
+              <li>HD Videocalls</li>
+              <li>Calender</li>
+              <li>Company workspace</li>
+              <li>Feed</li>
+              <li>Knowledge base</li>
+            </ul>
+          </li>
+          <li>
+            Task & projects
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            CRM
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Drive
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Contact center
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Website bulider
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Online store
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Marketing
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Online documents
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Sales Intelligence
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Automation
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            HR
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Multiple branches
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Scalability
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Enterprize pack
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>-</li>
+          <li>
+            Customer Support
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+          <li>
+            Administration
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjk5NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDFhNiA2IDAgMSAwIDAgMTJoMTdhNiA2IDAgMCAwIDAtMTJINnptMCAxYTUgNSAwIDAgMCAwIDEwaDE3YTUgNSAwIDAgMCAwLTEwSDZ6IiBmaWxsPSIjNzlCRUQ0Ii8+PHBhdGggZD0iTTMgN2EzIDMgMCAwIDEgMy0zaDIuOTRhLjA2LjA2IDAgMCAxIC4wNi4wNnY1Ljg4YS4wNi4wNiAwIDAgMS0uMDYuMDZINmEzIDMgMCAwIDEtMy0zek0yNiA3YTMgMyAwIDAgMS0zIDNoLTMuOTNhLjA3LjA3IDAgMCAxLS4wNy0uMDdWNC4wN2EuMDcuMDcgMCAwIDEgLjA3LS4wN0gyM2EzIDMgMCAwIDEgMyAzeiIgZmlsbD0iIzI3OTFCMyIgZmlsbC1vcGFjaXR5PSIuODEiLz48cmVjdCB4PSIxMSIgeT0iNCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjEiIGZpbGw9IiMyNzkxQjMiIGZpbGwtb3BhY2l0eT0iLjgxIi8+PC9zdmc+"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- plan section html end -->
 
@@ -102,3 +643,4 @@
   let pricing_Footer = document.getElementById("footer");
   pricing_Footer.innerHTML = footer();
 </script>
+<script src="./scripts/price.js"></script>
