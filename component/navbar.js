@@ -4,13 +4,13 @@ function navbar(){
         </div>
         <div id="navbar2">
             <div id="left_bar">
-                <p>TOOLS</p>
-                <p>PRICING</p>
-                <p>SOLUTION</p>
-                <p>PARTNER</p>
-                <p>APPS</p>
-                <p>BLOG</p>
-                <p>SUPPORT</p>
+                <p onclick="nav_tools()">TOOLS</p>
+                <p onclick="nav_pricing()">PRICING</p>
+                <p onclick="nav_solution()">SOLUTION</p>
+                <p onclick="nav_partner()">PARTNER</p>
+                <p onclick="nav_apps()">APPS</p>
+                <p onclick="nav_blog()">BLOG</p>
+                <p onclick="nav_support()">SUPPORT</p>
             </div>
             <div id="right_bar">
                 <button>START FOR FREE</button>
@@ -36,3 +36,4 @@ export default navbar;
     import navbar from "./component/navbar.js"
     document.getElementById("navbar").innerHTML=navbar()
 </script> */
+

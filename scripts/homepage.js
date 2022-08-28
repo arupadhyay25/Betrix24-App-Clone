@@ -7,7 +7,7 @@ function collab(){
      t6:"Drive",
      t7:"Webmail",
      t8:"Workgroups",
-    img:"collab.png"};
+    img:"./images/collab.png"};
   appendData(d1);
     
 }
@@ -22,7 +22,7 @@ function crm(){
      t6:'Contarct-center',
      t7:'Marketing',
      t8:'Sales-Intelligence',
-     img:"crm.png",};
+     img:"./images/crm.png",};
      appendData(d2); 
 }
 function tasks(){
@@ -34,7 +34,7 @@ function tasks(){
          t6:'Task-and-Project-Templates',
          t7:'Task-Automation',
          t8:'Crm-integration',
-         img:"tasks.png",};
+         img:"./images/tasks.png",};
        appendData(d3); 
   }
 function sites(){
@@ -46,19 +46,19 @@ function sites(){
          t6:'Web-widgets',
          t7:'Crm-integration',
          t8:'Google-Analatyics-intigration',
-         img:"sites.png",};
+         img:"./images/sites.png",};
        appendData(d4); 
   }
   function automation(){
     let d5 =   {t1:"Employee directory",
-        t2:"Worktime tracking and reports",
+        t2:"tracking and reports",
          t3:"Absence-management",
-        t4:"Announcements and appreciations",
+        t4:"Announcements",
          t5:'Workflow automation',
          t6:'Requests and approvals',
          t7:'No code Rpa',
          t8:'Knowledge Base',
-         img:"hr.png",};
+         img:"./images/hr.png",};
          appendData(d5);
   }
 
@@ -151,9 +151,12 @@ function appendData(data){
     p8.innerText = data.t8;
     let img = document.createElement('img');
     img.src = data.img;
+    img.style.height="60%";
+    img.style.margin="50px 0px";
     let btn = document.createElement('button');
     btn.setAttribute("class","freebtn");
     btn.innerText = "Start For Free";
+    btn.style.margin="60px 0px"
     items.append(p1,p2,p3,p4,p5,p6,p7,p8,btn);
     image.append(img);
   
@@ -189,3 +192,5 @@ function logbtn(){
 function more(){
   window.location.href = "https://www.bitrix24.in/prices/self-hosted.php";
 }
+
+

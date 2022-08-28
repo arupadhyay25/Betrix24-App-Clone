@@ -8,9 +8,11 @@
     <style>
 
     </style>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/homepage.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
   <div id="navbar"></div>
@@ -41,7 +43,7 @@
   </div>
   <div class="box">
     <!-- enter box here -->
-   <img style="width: 90%;" src="user2.png" alt="">
+   <img style="width: 90%;" src="./images/user2.png" alt="">
   </div>
   <h1 class="headings" >How much is Bitrix24?
 </h1>
@@ -62,7 +64,7 @@
     <button id="select" ><a style="text-decoration:none;color:black;" href="https://www.bitrix24.in/prices/cloud_archive.php">Archived plans</a></button>
   </div>
 </div>
-    <div class="container2">
+    <div class="container2" style="padding: 50px;">
     <!-- 1stbox -->
     <div style="background-color:#F5FDD6;" >
       <div  style="background-color: #E3F3A4;" class="card1">
@@ -249,21 +251,7 @@
 
   <div class="news">
     <!-- enter box here -->
-    <div>
-      <img src="forbes.png" alt="">
-    </div>
-    <div>
-      <img src="pc_magazine.png" alt="">
-    </div>
-    <div>
-      <img style="padding-top:10%;" src="pc_world.png" alt="">
-    </div>
-    <div>
-      <img style="padding-top:15%;" src="techreader.png" alt="">
-    </div>
-    <div>
-      <img src="zd-net.png" alt="">
-    </div>
+      <img src="./images/press.JPG" alt="">
      
     </div>
     <hr style="color:rgb(184, 181, 181);padding:0.5px">
@@ -277,7 +265,7 @@
         <p>You can use the self-hosted version of Bitrix24 to run on your server. You get full control over data, source code access, and additional tools, such as helpdesk and e-learning, as well as integration and customization options.</p>
         <button onclick="more()"; style="width:150px;padding:12px;border-radius: 50px;border:2px solid #21BDEE;background-color: white;color:#21BDEE" >Learn More</button>
       </div>
-      <img src="clouds.png" alt="">
+      <img src="./images/clouds.png" alt="">
         </div>
         
         <div id="form">
@@ -292,7 +280,8 @@
 
 </body>
 </html>
-<script src="index.js"></script>
+<script src="./scripts/homepage.js"></script>
+<script src="./scripts/homepagelinks.js"></script>
 <script type="module">
   import navbar from "./component/navbar.js"
   document.getElementById("navbar").innerHTML=navbar();
@@ -306,8 +295,5 @@
     stickey();
 
     // for sticky form
-  
-
-
 </script>
 
