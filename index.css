@@ -229,4 +229,12 @@ padding-top: 12px;
     border-radius: 50px;
     width: 70%;
  }
+ .cut{
+    bottom: 7px;
+    font-size: 12px;
+    line-height: 0;
+    text-decoration: line-through;
+    opacity: .4;
+    margin-bottom: -7%;
+ }
 

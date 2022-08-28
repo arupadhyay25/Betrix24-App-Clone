@@ -90,7 +90,7 @@ function sites(){
  
    
     
- 
+ for(let i = 0;i<1;i++){
 id = setTimeout(function(){
   collab();
 },0000);
@@ -117,10 +117,11 @@ id = setTimeout(function(){
 
   id = setTimeout(function(){
     automation();
+    location.reload();
   },16000);
 
-  
-
+    
+ }
 
 
   
