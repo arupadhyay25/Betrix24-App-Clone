@@ -1,0 +1,125 @@
+#topbar{
+    background-color: deepskyblue;
+    font-size: 38px;
+    color: white;
+    font-weight: 400;
+    line-height: 48px;
+    font-family: montserrat;
+    padding: 40px;
+    padding-left: 100px ;
+}
+#one,#two,#three,#four{
+    display: flex;
+}
+#two{
+    margin-top: -110px;
+}
+#one>div>img{
+    height: 600px;
+    margin: 30px;
+}
+#img{
+    height: 400px;
+    margin: 30px;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+#one>div+div,#two>div{
+    padding-top: 150px;
+    padding-left: 50px;
+    width: 400px;
+}
+#topbar>h2{
+    font-weight: lighter;
+    font-size: 35px;
+}
+#topbar>p{
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    color: rgb(38, 38, 38);
+    line-height: 32.4px;
+    font-family: Montserrat;
+}
+button{
+    background-color: deepskyblue;
+    color:white ;
+    height: 50px;
+    width: 150px;
+    border-radius:25px;
+    border: 0;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* *************************************** */
+#two>#two1>#two11{
+margin-left: -100px;
+        display: flex;
+        margin-top:-50px;
+}
+#two>#two1>#two11>img{
+    height: 250px;
+    width: 250px;
+}
+#two>#two1>#two11>img+img{
+    margin-top: 210px;
+    margin-left:-10px ;
+    height: 40px;
+    width: 130px;
+}
+
+/* *************************************** */
+
+#three{
+    margin-top:50px;
+    margin-left: -30px;
+}
+#three>#three1>img{
+    height: 500px;
+    width: 800px;
+    margin: 30px;
+}
+#three>div+div{
+    padding-top: -30px;
+    padding-left: 50px;
+    width: 400px;
+}
+#three21>h3{
+    font-size: 19px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#b1{
+    background-color: greenyellow;
+    height: 40px;
+    width: auto;
+    color: black;
+    border-radius:20px;
+    border: 0;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+#b2,#b3,#b4,#b5{
+    background-color: rgb(224, 224, 224);
+    color: black;
+    height: 40px;
+    width: auto;
+    border-radius:20px;
+    border: 0;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+/* *************************************** */
+
+
+#four1{
+    margin: 130px 55px;
+    
+}
+#four2>img{
+    height: 500px;
+    width: 700px;
+}

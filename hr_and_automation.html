@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hr and automation</title>
     <link rel="stylesheet" href="./hr page data/index.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/tools.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
+    <div id="navbar"></div>
+    <div class="content"></div>
+
+    <!-- heading section html start -->
+    <div id="heading" style="background-color: #48bdef;width: 100%;margin-left: 0;">
+        <div id="link_bar">
+          <div class="tools_links"><a href="#">Collaboration</a></div>
+          <div class="tools_links"><a href="tasks.html">Tasks and projects</a></div>
+          <div class="tools_links" ><a href="crm.html">CRM</a></div>
+          <div class="tools_links"><a href="contact_centre.html">Contact center</a></div>
+          <div class="tools_links"><a href="tools_website.html">Websites</a></div>
+          <div class="tools_links"><a href="hr_and_automation.html">HR and automation</a></div>
+        </div>
+      </div>
+      <!-- heading section html end -->
+
     <!-- 1st step -->
     <div id="headings">
-        <h2>Work time tracking & reports</h2>
+        <h2 id="hr_head">Work time tracking & reports</h2>
         <p>Bitrix24 HR automation system features plenty of tools to help you see how much and how well your team works, whether it’s in the office or remotely</p>
     </div>
     <div class="container1">
@@ -132,18 +153,18 @@
     </div>
     <div class="list">
         <ul>
-            <li>Mobile Task Management > </li>
-            <li>Knowledge Base > </li>
-            <li>Online Workspace > </li>
-            <li>Calender > </li>
-            <li>Team Time Management > </li>
+            <li>Mobile Task Management </li>
+            <li>Knowledge Base </li>
+            <li>Online Workspace</li>
+            <li>Calender </li>
+            <li>Team Time Management </li>
         </ul>
         <ul>
-            <li>Drive > </li>
-            <li>Videoconferencing > </li>
-            <li>Sales Inteligence > </li>
-            <li>Telephony > </li>
-            <li>Robotic Process Automation > </li>
+            <li>Drive </li>
+            <li>Videoconferencing </li>
+            <li>Sales Inteligence </li>
+            <li>Telephony </li>
+            <li>Robotic Process Automation </li>
         </ul>
     </div>
     <div id="headings">
@@ -181,5 +202,19 @@
     <button onclick="more()"; style="padding:12px;border-radius: 50px;border:2px solid #21BDEE;background-color: #21BDEE;color:white;margin-top: 5%;margin-bottom: 2%;" >Request Assistent From Bitrix Partnaers</button>
    </div>
 
+   <div id="footer"></div>
+
+
 </body>
 </html>
+<script src="./scripts/homepage_links.js"></script>
+<script type="module">
+    import navbar from "./component/navbar.js"
+    document.getElementById("navbar").innerHTML=navbar()
+  
+    import stickey from "./component/stickey.js"
+    stickey()
+  
+    import footer from "./component/footer.js"
+    document.getElementById("footer").innerHTML=footer()
+  </script>

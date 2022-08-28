@@ -1,10 +1,10 @@
-body{
-    margin: 0;
-    font-family: system-ui, Montserrat, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+#hr_head{
+    font-size: 40px;
 }
 
-
 #headings{
+
     text-align: center;
     width: 80%;
     margin: auto;

@@ -59,3 +59,10 @@ body{
 #last_div{
     margin: 50px;
 }
+
+#col_btn{
+    padding: 10PX 20PX;
+    font-size: 15PX;
+    border-radius: 20PX;
+    border: 0PX;
+}

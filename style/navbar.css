@@ -19,11 +19,11 @@ body{
 .sticky + .content {
     padding-top: 100px;
 }
-#navbar1{
+#navbar_1{
     display: flex;
     justify-content: center;
 }
-#navbar2{
+#navbar_2{
     width:auto;
     height: auto;
     display: flex;
@@ -55,7 +55,7 @@ body{
     color: grey;
     border-style: hidden;
 }
-#navbar1>img{
+#navbar_1>img{
     height: 40px;
     width: 200px;
     margin-top: 10px;

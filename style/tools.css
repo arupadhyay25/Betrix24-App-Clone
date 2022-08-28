@@ -9,21 +9,13 @@
   --yellow: #bdf300;
   --white: #fff;
   --blk: #262626;
-  --bgcolor: linear-gradient(
-    to right,
-    #48bdef,
-        #3fabde,
-        #2cb3f7,
-        #0aa8fb,
-        #019cfd
-        );
       }
       /* 01.root css end */
 
 /* 02.general css start */
-body {
+/* body {
     margin: 0;
-}
+} */
 
 a{
     text-decoration: none;
@@ -56,9 +48,10 @@ a{
   height: 96px;
   font-weight: 400;
   color: var(--white);
-  margin: 0;
+  margin-left: -100px;
 }
 #heading_description {
+  text-align: right;
   width: 500px;
   height: 108px;
   color: var(--white);
