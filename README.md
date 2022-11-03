@@ -1,7 +1,7 @@
 # Betrix24 App (Clone)
 Project: make a clone of https://www.bitrix24.in/ site
 
-*An all-in-one free platform to manage your team and run your sales.  *
+*An all-in-one free platform to manage your team and run your sales.*
 
 &nbsp;&nbsp;&nbsp;&#160;In this project we have tried to make a look alike clone of actual Website. With our efforts and the technology stack, that we have learned till now in the masai school, we were able to clone the front end with same looking & features. <br><br>
 
@@ -17,11 +17,10 @@ For storing user data we also used LocalStorage.
 - When You land on hompage you you see the home page.
 - After that you see all variety of pages in the navigation Bar, you can move to different pages.
 - It Starts with about page that is details about the website goals and features present on this website. 
-- In the food Section you can search different food items and get detailed about its macros and calories. 
-- To enter Community page you to be logged in i.e you will be redirected to login page after login you will be redirected to the page.
+- In the Partners Section you can see partners associated and get detailed about then and also sort by name and country. 
 
 ## Libraries Used 🌟
-All the image and icon links have been taken from the main website ( [My FitnessPal](https://www.myfitnesspal.com/) )
+All the image and icon links have been taken from the main website ( [My FitnessPal]([www.Betrix24.com](https://www.bitrix24.in/)/) )
 
 ## Snapshots 📷
 - Landing Page (Home Page):
@@ -46,12 +45,12 @@ All pages are not responsive yet , those pages are might not be properly visible
 
 ## Team Members and Contributors 😇 :
 
-- 👤 [Abhishek Upadhayay](https://github.com/sanketpatil05)
+- 👤 [Abhishek Upadhayay](https://github.com/arupadhyay25)
 
-- 👤 [Sayan Ghosh](https://github.com/venkat0086)
+- 👤 [Sayan Ghosh](https://github.com/Sayan97Ghosh)
     
-- 👤 [Gaurav Sharma](https://github.com/Aniket-Chimurkar)
+- 👤 [Gaurav Sharma](https://github.com/gauravfar93)
   
-- 👤 [Hiren Sudra](https://github.com/PushpendraKPal)
+- 👤 [Hiren Sudra](https://github.com/HirenShudra)
 
-- 👤 [Vishal Chandel](https://github.com/PushpendraKPal)
+- 👤 [Vishal Chandel](https://github.com/vishal97600)
